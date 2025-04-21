@@ -10,3 +10,6 @@
 - 各項目の値や数値を指定する際、必ずしも`"`で値を囲む必要はないが、値にスペースが含まれる場合に正しく動作しないため、`"`はつけた方がよい
 
 ### 参考文献
+- [Windowsでレジストリの追加or更新をコマンド（bat）で実行](https://qiita.com/waokitsune/items/e2c514530380564239b6)
+- [レジストリの変更をコマンドで実行する方法](https://oozappase.com/windows/regcommand/)
+- [バッチファイルによく出てくる@echo offの意味](https://qiita.com/Sanada-code/items/5d21d885b732e6fb0d03)
