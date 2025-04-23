@@ -25,6 +25,16 @@ echo %STR%
 ```
 <br>
 
+### @echo off
+
+<br>
+
+### コメントアウト
+`REM`コマンドを使用するか、先頭に`::`をつけるとコメント化できる。<br>
+それぞれ異なるスタイルではあるものの、２つとも行全体をコメント化できることに変わりはなく、<br>
+どちらを使っても問題ない。
+<br>
+
 ### 参考文献
 - [Windowsでレジストリの追加or更新をコマンド（bat）で実行](https://qiita.com/waokitsune/items/e2c514530380564239b6)
 - [レジストリの変更をコマンドで実行する方法](https://oozappase.com/windows/regcommand/)
