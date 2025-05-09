@@ -1,4 +1,4 @@
-## reg コマンド
+## reg
 `reg add <Registry Key> /v <Value> /t <Type> /d <Data> /f`<br>
 - `reg`：レジストリ操作コマンド<br>
 - `add <レジストリーキー>`：存在しなければ追加、存在した場合は変更内容が更新される。パスの最後に`\`は不要。<br>
