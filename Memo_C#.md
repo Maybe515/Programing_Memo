@@ -83,7 +83,22 @@ using System.Collections.Generic;
 ### 条件付きコンパイル（if, elif, else, endif）
 定義したシンボルに従って、コンパイル対象となるコードを切り替えることができる。<br>
 デバッグビルドとリリースビルドの切り替えでよく使用される。<br>
+`if文`と同じ動作で実行される。<br>
+```C#
+#define <symbol name1>
+#define <symbol name2>
 
+using System;
+using System.Collections.Generic;
+
+# if <symbol name1>
+    // 処理
+# elif <symbol name2>
+    // 処理
+# else
+    // 処理
+#endif
+```
 <br>
 
 ## コメントアウト
