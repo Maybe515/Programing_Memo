@@ -91,11 +91,11 @@ using System.Collections.Generic;
 using System;
 using System.Collections.Generic;
 
-# if <symbol name1>
+#if <symbol name1>
     // 処理
-# elif <symbol name2>
+#elif <symbol name2>
     // 処理
-# else
+#else
     // 処理
 #endif
 ```
