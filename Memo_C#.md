@@ -1,6 +1,7 @@
 ## コーディングルール
 - 処理するコードの最後には`;`をつける
 - メソッドの処理内容は`{`と`}`で囲む
+- プリプロセス命令を記載する
 <br>
 
 ## 変数・定数宣言
@@ -47,6 +48,42 @@ publicで使用したい場合は`readonly`というキーワードを用いて�
 ## 関数まとめ
 - `split`：指定した区切り文字から文字列を分割できる。
 - `containts`：文字列・配列・Listから指定した対象が含まれるかを確認できる。
+<br>
+
+## プリプロセッサ（プリプロセス命令）
+C#では、コーディングしたプログラムをコンパイルして実行ファイルに変換する。<br>
+このコンパイルの直前に行なう特殊な処理のことを指す。<br>
+プログラムの動作には直接影響しないが、利用することで生産性を向上させることができる。<br>
+<details><summary>プリプロセス命令一覧</summary><ul><li>define</li><li>if</li><li>elif</li><li>else</li><li>endif</li><li>error</li><li>line</li><li>nullable</li><li>pragma</li><li>pragma checksum</li><li>pragma warning</li><li>region</li><li>end region</li><li>undef</li><li>warning</li></ul></details>
+<br>
+
+### シンボルの定義
+上記の命令で使用するための定数のようなもの。定義するには`#define`を使用する。<br>
+この命令はコードの先頭で定義する必要がある。<br>
+```C#
+#define <symbol name>
+
+using System;
+using System.Collections.Generic;
+```
+<br>
+
+### undef命令
+`#define`命令で定義したシンボルを未定義にする。<br>
+この命令も`#define`と同様にコードの先頭で定義する必要があり、<br>
+コンパイラオプションで設定したシンボルを、そのソースコード上で無効にすることができる。<br>
+```C#
+#undef <symbol name>
+
+using System;
+using System.Collections.Generic;
+```
+<br>
+
+### 条件付きコンパイル（if, elif, else, endif）
+定義したシンボルに従って、コンパイル対象となるコードを切り替えることができる。<br>
+デバッグビルドとリリースビルドの切り替えでよく使用される。<br>
+
 <br>
 
 ## コメントアウト
