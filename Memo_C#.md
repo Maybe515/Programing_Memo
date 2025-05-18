@@ -64,8 +64,21 @@ int[] arr4 = new int[5, 6];    // intで宣言
 
 
 ## 関数まとめ
+### 分岐処理
+- `if`, `elseif`, `else`
+- `switch-case`, `default`
+
+### ループ処理
+- `for`
+- `while`
+- `do-while`
+- `foreach`
+
+### その他
 - `split`：指定した区切り文字から文字列を分割できる。
 - `containts`：文字列・配列・Listから指定した対象が含まれるかを確認できる。
+- `Regex.IsMatch`：正規表現を用いて、指定した対象が含まれるかを確認できる。
+- `tostring`
 <br>
 
 ## プリプロセッサ（プリプロセス命令）
