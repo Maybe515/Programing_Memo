@@ -117,7 +117,7 @@ int[] arr4 = new int[5, 6];    // intで宣言
 |x >= y|以下||
 |x && y|AND演算||
 |`x || y`|OR演算||
-|x + y (文字列)|文字列結合|"abc" + "def" = "abcdef"|
+|x + y (string)|文字列結合|"abc" + "def" = "abcdef"|
 
 
 
