@@ -35,7 +35,7 @@ echo %STR%
 
 ## 文字化け
 `echo`を使用して日本語を出力するとき、プロンプト上で文字化けすることがある<br>
-その場合は、`chcp`コマンドで文字コードを指定、もしくは文字コードを「ANSI」で保存すると解決する<br>
+その場合は、`chcp`コマンドで文字コードを指定、もしくは文字コードを「ANSI」でエンコードすると解決する（コマンドプロンプトの文字コードが「Shift_JIS」になっているため）<br>
 
 <details>
 <summary>chcpコマンド</summary>
@@ -50,6 +50,8 @@ echo %STR%
 |65000|utf-7|
 |65001|utf-8|
 </details>
+
+- [コードページ番号 一覧](https://learn.microsoft.com/ja-jp/windows/win32/intl/code-page-identifiers)
 
 <br>
 
